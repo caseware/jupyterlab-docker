@@ -23,6 +23,6 @@ ENV IPYTHONDIR="/app/.ipython"
 # We want unbuffered Python
 ENV PYTHONUNBUFFERED=TRUE
 
-EXPOSE 9999:9999
+EXPOSE 8888:8888
 
 CMD ["jupyter", "lab"]
