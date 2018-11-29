@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  jupyterlab-docker:
+    build: .
+    container_name: jupyterlab-docker
+    ports:
+      - 8888:8888
+    volumes:
+      # so that files in container persist
+      - .:/app
