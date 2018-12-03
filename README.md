@@ -5,9 +5,11 @@ This repository contains everything you need to build a JupyterLab Docker image.
 ## Running
 
 Run the following command to launch the container: 
-- `docker run -p 8888:8888 jupyterlab-docker `
+- `docker run -v /path/to/your/host/notebooks:/app -p 8888:8888 jupyterlab-docker`
 
-The container is now running and a number of messages will be printed to the terminal. This will include a security
+Alternatively, a sample `docker-compose.yml` file is given for reference.
+
+Once the container is running, a number of messages will be printed to the terminal. This will include a security
 token required to access JupyterLab in your browser. An example of the security token is provided, though yours will 
 look slightly different: `http://(127.0.0.1):8888/?token=ed7a8cdaa38838e31f7d4a03145c97fa8ea88f92b4bc35a3`.
 
