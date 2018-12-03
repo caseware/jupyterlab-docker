@@ -2,7 +2,7 @@ version: '2'
 
 services:
   jupyterlab-docker:
-    build: .
+    image: casewareint/jupyterlab-docker:latest
     container_name: jupyterlab-docker
     ports:
       - 8888:8888
